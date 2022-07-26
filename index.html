@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,
       initial-scale=1.0">
+    <link rel="preconnect"
+      href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+      crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Web Page Style Guide</title>
   </head>
@@ -21,26 +28,15 @@
           <li class="nav-item"><a class="nav-selection"
               href="#button">Buttons</a></li>
           <li class="nav-item"><a class="nav-selection"
-              href="#palette">Color Pallete</a></li>
+              href="#palette">Color</a></li>
           <li class="nav-item"><a class="nav-selection"
-              href="#">Links</a></li>
-          <li class="nav-item"><a class="nav-selection"
-              href="#">Headers</a></li>
-          <li class="nav-item"><a class="nav-selection"
-              href="#">Navigation</a></li>
-          <li class="nav-item"><a class="nav-selection"
-              href="#">Icons</a></li>
-          <li class="nav-item"><a class="nav-selection"
-              href="#">Typography</a></li>
-          <li class="nav-item"><a class="nav-selection"
-              href="#">Borders & Margins</a></li>
-          <li class="nav-item"><a class="nav-selection"
-              href="#">Default Page Layout</a></li>
+              href="#fonts">Fonts</a></li>
         </ul>
       </nav>
+
       <div class="main-contents">
         <section>
-          <h2>Example section</h2>
+          <h2>Buttons</h2>
           <p>The following are the button styles acceptable
             for the development of this site. The basic
             style
@@ -54,32 +50,37 @@
             <h3>Style 1 - base style</h3>
             <div>
               <button class="btn-1">Style 1</button>
-              <p class="code">this
-                is
-                some sample code to copy</code>
+              <p class="code">
+                border: none;
+                background-color: #C7CCDB;
+                color: white;
+                padding: 10px;
+              </code>
             </p>
           </article>
           <article>
             <h3>Style 2 - Hover effect</h3>
             <div>
               <button class="btn-2">Style 2</button>
-              <p class="code">this
-                is
-                some sample code to copy</code>
+              <p class="code"> border: 1px solid #2A324B;
+                background-color: #C7CCDB;
+                color: white;
+                padding: 10px;</code>
             </p>
           </article>
           <article>
             <h3>Style 3 - basic transition</h3>
             <div>
               <button class="btn-3">Style 3</button>
-              <p class="code">this
-                is
-                some sample code to copy</code>
+              <p class="code">border: 1px solid #2A324B;
+                background-color: #C7CCDB;
+                color: white;
+                padding: 10px;
+                cursor: pointer;</code>
             </p>
           </article>
 
         </section>
-
 
         <section id="palette">
           <h2>Color Palette</h2>
@@ -87,19 +88,47 @@
           <article>
             <div class="card primary">
               <h3>Primary</h3>
-              <p><strong>Hex value</strong></p>
+              <p class="light-text">#FCE8D9</p>
+              <p>Blue bell</p>
             </div>
-            <div class="card primary">
-              <h3>Primary</h3>
-              <p><strong>Hex value</strong></p>
+            <div class="card secondary">
+              <h3>Secondary</h3>
+              <p class="dark-text">#C7CCDB</p>
+              <p>Light Periwinkle</p>
             </div>
-            <div class="card primary">
-              <h3>Primary</h3>
-              <p><strong>Hex value</strong></p>
+            <div class="card teritary">
+              <h3 class="light-text">Teritary</h3>
+              <p class="light-text">#2A324B</p>
+              <p class="light-text">Space Cadet</p>
             </div>
-            <div class="card primary">
-              <h3>Primary</h3>
-              <p><strong>Hex value</strong></p>
+            <div class="card accent">
+              <h3 class="dark-text">Accent</h3>
+              <p class="dark-text">#FCE8D9</p>
+              <p>Taco shell</p>
+            </div>
+          </article>
+
+
+        </section>
+
+        <section id="fonts">
+          <h2>Fonts</h2>
+          <p>Available fonts</p>
+          <article>
+            <div class="text-card">
+              <h3>Base</h3>
+              <div class="font base">This is some sample
+                textsadfsadfasfasdfasdfasdfsadf</div>
+            </div>
+            <div class="text-card">
+              <h3>Italics</h3>
+              <div class="font italic">This is some sample
+                text</div>
+            </div>
+            <div class="text-card">
+              <h3>Bold</h3>
+              <div class="font bold">This is some sample
+                text</div>
             </div>
           </article>
 
